@@ -11,9 +11,9 @@ LINK="test_link"
 # -s option: This flag stands for "symbolic". It tells ln to create a symbolic (or soft) link, which is a reference to another file or directory. A symbolic link works like a shortcut in a file system.
 # ln -s - is useful for version management, creating shortcuts, or managing resources across different locations. It’s common for managing configuration files, libraries, or data across multiple systems or services.
 
-# touch $FILE
-# mkdir -p $DIRECTORY
-# ln -s $FILE $LINK
+touch $FILE
+mkdir -p $DIRECTORY
+ln -s $FILE $LINK
 
 # File operator examples:
 

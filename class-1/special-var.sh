@@ -47,3 +47,34 @@ echo "Eleventh argument: ${11}"
 
 # Run the command 
 # ./special-var.sh arg1 arg2 arg3 arg4 arg5 arg6 arg7 arg8 arg9 arg10 arg11
+
+
+# =================
+
+# # $@ - Stores arguments as an array
+# echo "Arguments stored in \$@:"
+# for arg in "$@"; do
+#     echo "$arg"
+# done
+
+# # $# - Shows the number of arguments supplied to the script
+# echo "Number of arguments: $#"
+
+# # $$ - Displays the process ID of the current shell
+# echo "Process ID of the current shell: $$"
+
+# # $* - Groups all given arguments by connecting them together
+# echo "Arguments grouped together using \$*:"
+# echo "$*"
+
+# # $! - Shows the ID of the last background job
+# echo "ID of the last background job: $!"
+# echo "Starting a background job (sleep for 5 seconds)..."
+# sleep 5 &
+# echo "ID of the last background job after starting sleep: $!"
+
+# # $? - Displays the exit status code of the last executed command
+# echo "Exit status code of the previous command: $?"
+# echo "Simulating an error command..."
+# ls /nonexistentfile &> /dev/null
+# echo "Exit status code of the failed command: $?"

@@ -5,6 +5,7 @@ STRING="Hello, Shell scripting is amazing!"
 
 # -z: Returns true if the string length is zero
 EMPTY_STRING=""
+
 if [ -z "$EMPTY_STRING" ]; then
     echo "-z: The string is empty."
 else
@@ -27,19 +28,19 @@ echo "Original String: $STRING"
 echo "${STRING#*, } - Remove shortest prefix match before ','"
 echo "${STRING##*, } - Remove longest prefix match before ','"
 
-# Substring Removal (Suffix)
+Substring Removal (Suffix)
 echo "${STRING%,*} - Remove shortest suffix match after ','"
 echo "${STRING%%,*} - Remove longest suffix match after ','"
 
-# Substring Extraction - ${string:start:length}
-echo "Substring (start at 7, length 4): ${STRING:7:4}"
+Substring Extraction - ${string:start:length}
+echo "Substring (start at 7, length 4): ${STRING:7:11}"
 
 # Substring Replacement
-echo "${STRING/scripting/coding} - Replace first occurrence of 'scripting' with 'programming'"
+echo "${STRING/scripting/programming} - Replace first occurrence of 'scripting' with 'programming'"
 echo "${STRING//is/was} - Replace all occurrences of 'is' with 'was'"
 
 # Substring Test (Testing if a substring exists)
-SUBSTRING="amazing"
+SUBSTRING="abc"
 if [[ "$STRING" == *"$SUBSTRING"* ]]; then
     echo "Substring Test: '$SUBSTRING' is present in the string."
 else
