@@ -1,4 +1,4 @@
-#!/opt/homebrew/opt/bash/bin/bash
+#!/bin/bash
 
 # Beginner: Simple array
 fruits=("Apple" "Banana" "Orange")

@@ -1,21 +1,21 @@
 #!/bin/bash
 
-function hi() {
-    echo "Hi!"
-}
+# function hi() {
+#     echo "Hi!"
+# }
 
-hi
+# hi
 
-function hi() {
-    echo "Hi!"
-    now
-}
+# function hi() {
+#     echo "Hi!"
+#     now
+# }
 
-function now() {
-    echo "It's $(date +%r)"
-}
+# function now() {
+#     echo "It's $(date +%r)"
+# }
 
-hi
+# hi
 
 
 function hi() {
