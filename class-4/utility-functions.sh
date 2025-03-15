@@ -56,7 +56,7 @@ check_disk() {
 #   [ "$usage" -gt "$threshold" ] && log_message "ALERT" "Disk usage: $usage%" "/var/log/myapp.log"
 }
 
-check_disk 25  # Alert if disk >80%
+check_disk 80  # Alert if disk >80%
 
 # Log rotation
 if [ -f ./app.log ] && [ $(wc -l < ./app.log) -gt 1000 ]; then
